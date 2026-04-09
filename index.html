@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODIGI Ads - Jasa Iklan Khusus Penulis & Penerbit Fiksi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#F97316', // Orange 500 (Vibrant Orange)
+                        secondary: '#18181B', // Zinc 900 (Charcoal Black)
+                        accent: '#FACC15', // Yellow 400 (Bright Accent)
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-2">
+                        <i class="fa-solid fa-bolt text-primary text-3xl"></i>
+                        <span class="font-bold text-2xl text-secondary tracking-tight">PRODIGI<span class="text-primary">Ads</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-primary font-medium transition">Tentang Kami</a>
+                    <a href="#features" class="text-gray-600 hover:text-primary font-medium transition">Strategi</a>
+                    <a href="#proof" class="text-gray-600 hover:text-primary font-medium transition">Studi Kasus</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-primary font-medium transition">Harga</a>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-200">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-secondary text-white overflow-hidden pt-20 pb-24 md:pt-32 md:pb-40">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead2708?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Writing Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-secondary to-zinc-900/90 mix-blend-multiply"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl text-center md:text-left">
+                <span class="inline-block py-1 px-3 rounded-full bg-orange-500/30 border border-orange-400 text-orange-200 text-sm font-semibold tracking-wide mb-6">
+                    Solusi Iklan #1 untuk Penulis & Penerbit
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Jangan Biarkan Karyamu <br>
+                    <span class="bg-gradient-to-r from-accent to-yellow-300 gradient-text">Tenggelam di Lautan Algoritma</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
+                    Kami membantu cerita fiksi digital di platform Wattpad, Dreame, & GoodNovel menemukan ribuan pembaca setia melalui strategi iklan Meta yang presisi, terukur, dan tertarget.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#pricing" class="bg-accent hover:bg-yellow-500 text-secondary px-8 py-4 rounded-full font-bold text-lg transition shadow-xl text-center">
+                        Lihat Paket Kami <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#how-it-works" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-semibold text-lg transition text-center">
+                        Pelajari Cara Kerjanya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us / Pain Points -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Cerita Bagus Saja Tidak Cukup</h2>
+                <p class="text-gray-600 text-lg">Ribuan cerita baru diunggah setiap hari. Tantangan terbesar penulis independen saat ini bukanlah cara menulis, melainkan cara mempromosikannya.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Tenggelam Tanpa Pembaca</h3>
+                    <p class="text-gray-600">Cerita berpotensi gagal viral karena tidak mendapat eksposur algoritma platform. Pembaca tidak tahu karyamu ada.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 bg-orange-100 text-primary rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Iklan Boncos / Salah Sasaran</h3>
+                    <p class="text-gray-600">Pernah coba ngiklan sendiri tapi budget habis tanpa hasil? Itu karena kurangnya pemahaman menarget audiens spesifik genre fiksi.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-primary rounded-2xl p-8 shadow-xl text-white transform md:-translate-y-4">
+                    <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Solusi: PRODIGI Ads</h3>
+                    <p class="text-orange-50 mb-4">Kami mengkombinasikan keahlian copywriting fiksi dan digital marketing untuk mendatangkan pembaca yang benar-benar menyukai genremu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Secret Sauce (Features added from discussion) -->
+    <section id="features" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Strategi "Secret Sauce" Kami</h2>
+                <p class="text-gray-600 text-lg">Mengapa kampanye kami lebih efektif dibandingkan agensi periklanan umum?</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fa-solid fa-pen-nib text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-lg text-secondary mb-2">Copywriting AIDA Fiksi</h4>
+                    <p class="text-sm text-gray-600">Menggunakan formula yang biasa dipakai platform besar seperti Dreame, Wattpad, GoodNovel: <b>Forbidden Situation <i class="fa-solid fa-arrow-right text-xs"></i> Emotional Tension <i class="fa-solid fa-arrow-right text-xs"></i> Cliffhanger</b>. Dijamin membuat pembaca tak tahan untuk klik.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fa-solid fa-code text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-lg text-secondary mb-2">Pixel & Retargeting</h4>
+                    <p class="text-sm text-gray-600">Pembaca tidak langsung klik? Kami pasang Tracking Pixel untuk menampilkan ulang (retargeting) iklan kepada mereka yang sudah menunjukkan ketertarikan.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fa-solid fa-shield-halved text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-lg text-secondary mb-2">Mitigasi Risiko (Aman)</h4>
+                    <p class="text-sm text-gray-600">Iklan ditolak (banned) karena visual dianggap melanggar oleh Platform iklan Meta? Tim kami yang akan urus proses banding dan revisi materi 100%.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fa-solid fa-chart-line text-3xl text-primary mb-4"></i>
+                    <h4 class="font-bold text-lg text-secondary mb-2">Data Transparan</h4>
+                    <p class="text-sm text-gray-600">Akses pelaporan langsung dari Dashboard Ads (CPC, CTR, CPM). Anda tahu persis kemana dan bagaimana anggaran iklan Anda dioptimalkan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Case Study (Crucial Addition) -->
+    <section id="proof" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-secondary rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-10 md:p-16 flex flex-col justify-center">
+                        <div class="inline-block py-1 px-3 rounded-full bg-orange-500/30 border border-orange-400 text-orange-200 text-sm font-semibold tracking-wide mb-6 w-max">
+                            Studi Kasus Kampanye
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-4">Novel "Rahasia Sang CEO"</h2>
+                        <p class="text-gray-300 mb-8 leading-relaxed">
+                            Penulis independen datang kepada kami dengan masalah: ceritanya stuck di 500 views selama 3 bulan di platform membaca digital. Namun setelah 7 hari menjalankan kampanye iklan pakai jasa PRODIGI Ads menggunakan iklan Meta dengan estimasi budget 150 ribu/hari berikut adalah hasilnya...
+                        </p>
+                        <div class="w-full bg-zinc-800/30 p-5 rounded-2xl border border-zinc-700/50">
+                            <!-- Table Header -->
+                            <div class="grid grid-cols-3 gap-4 mb-4 pb-3 border-b border-zinc-700">
+                                <div class="text-gray-400 text-xs uppercase tracking-wider font-semibold">Metrik</div>
+                                <div class="text-gray-500 text-xs uppercase tracking-wider font-semibold">Sebelum</div>
+                                <div class="text-accent text-xs uppercase tracking-wider font-semibold">Sesudah</div>
+                            </div>
+
+                            <!-- Rows -->
+                            <div class="space-y-5">
+                                <div class="grid grid-cols-3 gap-4 items-center">
+                                    <div class="text-gray-300 text-sm font-medium">Views / Hari</div>
+                                    <div class="text-xl font-bold text-gray-500">50</div>
+                                    <div class="text-2xl font-bold text-white">500+</div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 items-center">
+                                    <div class="text-gray-300 text-sm font-medium">Unique Reader / hari</div>
+                                    <div class="text-xl font-bold text-gray-500">10</div>
+                                    <div class="text-2xl font-bold text-white">300+</div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 items-center">
+                                    <div class="text-gray-300 text-sm font-medium">Love / hari</div>
+                                    <div class="text-xl font-bold text-gray-500">0</div>
+                                    <div class="text-2xl font-bold text-white">25+</div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 items-center">
+                                    <div class="text-gray-300 text-sm font-medium">CPC</div>
+                                    <div class="text-xl font-bold text-gray-500">Rp 850</div>
+                                    <div class="text-2xl font-bold text-white">Rp 125 <i class="fa-solid fa-arrow-trend-down text-green-400 text-sm ml-1"></i></div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 items-center">
+                                    <div class="text-gray-300 text-sm font-medium">CTR</div>
+                                    <div class="text-xl font-bold text-gray-500">0.5%</div>
+                                    <div class="text-2xl font-bold text-green-400">10% <i class="fa-solid fa-arrow-trend-up text-sm ml-1"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative min-h-[300px] md:min-h-full bg-gray-900 hidden md:block">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Dashboard Analytics" class="absolute inset-0 w-full h-full object-cover opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary to-transparent"></div>
+                        
+                        <!-- Floating mock cards container -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center gap-5 px-10">
+                            
+                            <!-- Card 1 (Original) -->
+                            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl shadow-2xl w-[85%] transform -translate-x-4 hover:scale-105 transition duration-300">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl"><i class="fa-solid fa-check"></i></div>
+                                    <div>
+                                        <h4 class="text-white font-bold">Kampanye Berhasil</h4>
+                                        <p class="text-gray-300 text-sm">Jumlah Koin meningkat tajam dalam 7 hari</p>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-white/20 rounded-full h-2 mb-2">
+                                    <div class="bg-accent h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                                <p class="text-xs text-right text-gray-300">Target KPI Tercapai 85%</p>
+                            </div>
+
+                            <!-- Card 2 (Duplicated & Modified) -->
+                            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl shadow-2xl w-[85%] transform translate-x-4 hover:scale-105 transition duration-300">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl"><i class="fa-solid fa-check"></i></div>
+                                    <div>
+                                        <h4 class="text-white font-bold">Kampanye Berhasil</h4>
+                                        <p class="text-gray-300 text-sm">Jumlah Pembelian meningkat dalam 7 hari</p>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-white/20 rounded-full h-2 mb-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+                                </div>
+                                <p class="text-xs text-right text-gray-300">Target KPI Tercapai 92%</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (9:16 Format) -->
+    <section id="testimonials" class="py-20 bg-zinc-900 overflow-hidden relative">
+        <!-- Background Accent -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-sm font-semibold tracking-wide mb-4">
+                    Testimoni Klien
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ribuan Penulis Sudah Membuktikannya</h2>
+                <p class="text-gray-400 text-lg">Jangan hanya dengar dari kami. Dengarkan langsung dari mereka yang ceritanya sudah sukses meroket bersama PRODIGI Ads.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Testimonial 1 -->
+                <div class="relative w-full aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl group border border-zinc-700 hover:border-primary transition-all duration-300 bg-gradient-to-b from-zinc-800 to-zinc-950">
+                    <img src="https://raw.githubusercontent.com/gerryramdani-star/hi-matt/refs/heads/main/asset/BG-novel-1.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110 z-0">
+                    <!-- Efek cahaya (Glow) di dalam card -->
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-orange-500/10 blur-3xl rounded-full transform translate-x-1/2 -translate-y-1/2 group-hover:bg-orange-500/20 transition-colors duration-500"></div>
+                    
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
+                        <div class="text-accent flex gap-1 mb-3 text-lg">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-3xl text-white/10 mb-2"></i>
+                        <p class="text-white font-medium text-sm leading-relaxed mb-6 relative z-10">
+                            "Awalnya ragu ngiklanin novel Romance aku karena takut boncos. Tapi berkat formula AIDA dari PRODIGI, views naik dari 100 ke 10k per hari! Copywriting-nya emang dewa banget, ngena banget di hati pembaca."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-white/10 pt-4 relative z-10">
+                            <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center font-bold text-primary text-lg">N</div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Nisa Aulia</h4>
+                                <p class="text-primary text-xs font-medium">Penulis GoodNovel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="relative w-full aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl group border border-zinc-700 hover:border-primary transition-all duration-300 transform md:-translate-y-6 bg-gradient-to-b from-zinc-800 to-zinc-950">
+                <img src="https://raw.githubusercontent.com/gerryramdani-star/hi-matt/refs/heads/main/asset/BG-novel-2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110 z-0">
+                    <!-- Efek cahaya (Glow) di dalam card -->
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-primary/10 blur-3xl rounded-full transform -translate-x-1/2 translate-y-1/2 group-hover:bg-primary/20 transition-colors duration-500"></div>
+                    
+                    <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full backdrop-blur-md z-10">
+                        Top Testimoni
+                    </div>
+
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
+                        <div class="text-accent flex gap-1 mb-3 text-lg">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-3xl text-white/10 mb-2"></i>
+                        <p class="text-white font-medium text-sm leading-relaxed mb-6 relative z-10">
+                            "ROI paling gila yang pernah saya dapat. Novel CEO saya langsung pecah telur dan pendapatan koin melonjak 300% dalam seminggu. Mode scale-up agresifnya PRODIGI beneran gak main-main!"
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-white/10 pt-4 relative z-10">
+                            <div class="w-10 h-10 rounded-full bg-zinc-700 flex items-center justify-center font-bold text-white text-lg">D</div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Diana S.</h4>
+                                <p class="text-primary text-xs font-medium">Penulis Dreame</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="relative w-full aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl group border border-zinc-700 hover:border-primary transition-all duration-300 bg-gradient-to-b from-zinc-800 to-zinc-950">
+                <img src="https://raw.githubusercontent.com/gerryramdani-star/hi-matt/refs/heads/main/asset/BG-novel-3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-110 z-0">
+                    <!-- Efek cahaya (Glow) di dalam card -->
+                    <div class="absolute top-1/2 left-1/2 w-40 h-40 bg-orange-400/5 blur-3xl rounded-full transform -translate-x-1/2 -translate-y-1/2 group-hover:bg-orange-400/10 transition-colors duration-500"></div>
+
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
+                        <div class="text-accent flex gap-1 mb-3 text-lg">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-3xl text-white/10 mb-2"></i>
+                        <p class="text-white font-medium text-sm leading-relaxed mb-6 relative z-10">
+                            "Timnya enak banget diajak diskusi. Gak cuma sekadar nyalain iklan, tapi ngasih insight plot mana yang bikin audiens penasaran buat di-retargeting. Laporannya super transparan dan gampang dipahami."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-white/10 pt-4 relative z-10">
+                            <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center font-bold text-primary text-lg">B</div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Bagas K.</h4>
+                                <p class="text-primary text-xs font-medium">Penerbit Independen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Separation of Service Fee and Ad Spend -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Pilih Paket Promosimu</h2>
+                <p class="text-gray-600 text-lg mb-4">Transparan dan terukur. Kami <strong>memisahkan</strong> Biaya Jasa (Management Fee) dan Anggaran Iklan (Ad Spend) agar kamu tahu persis kemana uangmu digunakan.</p>
+                <div class="inline-block bg-orange-50 border border-orange-100 text-orange-800 px-4 py-2 rounded-lg text-sm mb-8">
+                    <i class="fa-solid fa-circle-info mr-2"></i> Harga di bawah adalah <strong>Biaya Jasa (Management Fee)</strong> per kampanye.
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+                
+                <!-- Package 1 -->
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-shadow p-8 flex flex-col relative">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Debut Reader</h3>
+                    <p class="text-gray-500 text-sm mb-6">Durasi Layanan: 7 Hari Efektif Iklan Tayang</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-extrabold text-secondary">Rp 450.000</span>
+                        <span class="text-sm text-gray-500">/jasa</span>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-100">
+                        <p class="text-xs text-gray-500 font-semibold mb-1 uppercase tracking-wider">Estimasi Ad Spend (Disiapkan Klien)</p>
+                        <p class="text-sm font-bold text-primary">Rp 50k - Rp 150k / hari</p>
+                        <p class="text-xs text-gray-500 mt-2"><i class="fa-solid fa-chart-pie text-accent mr-1"></i> Estimasi Jangkauan: 2k-5k audiens tertarget</p>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Riset Audiens Basic</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> 1 Desain Visual Image</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Copywriting AIDA</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Laporan Akhir Basic</li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold py-3 rounded-xl transition">Pilih Debut Reader</a>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="bg-white rounded-2xl border-2 border-primary shadow-xl p-8 flex flex-col relative transform lg:-translate-y-4">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-accent to-yellow-400 text-secondary font-bold text-xs px-4 py-1.5 rounded-full uppercase tracking-wide">
+                        Paling Diminati
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Rising Star</h3>
+                    <p class="text-gray-500 text-sm mb-6">Durasi Layanan: 14 Hari Efektif Iklan Tayang</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-extrabold text-secondary">Rp 950.000</span>
+                        <span class="text-sm text-gray-500">/jasa</span>
+                    </div>
+                    
+                    <div class="bg-orange-50 rounded-lg p-4 mb-6 border border-orange-100">
+                        <p class="text-xs text-orange-800 font-semibold mb-1 uppercase tracking-wider">Estimasi Ad Spend (Disiapkan Klien)</p>
+                        <p class="text-sm font-bold text-primary">Rp 100k - Rp 250k / hari</p>
+                        <p class="text-xs text-orange-600 mt-2"><i class="fa-solid fa-chart-pie text-accent mr-1"></i> Estimasi Jangkauan: 5k-15k audiens tertarget</p>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Riset Audiens Mendalam</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> 2 Desain Visual Image/Video high CTR</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Copywriting AIDA</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Instalasi Pixel Retargeting</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Laporan Akhir + Insight</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-green-500 mt-0.5"></i> Bonus Landing Page seperti iklan Platform</li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center bg-primary text-white hover:bg-orange-600 font-semibold py-3 rounded-xl transition shadow-lg shadow-orange-200">Pilih Rising Star</a>
+                </div>
+
+                 <!-- Package 3 -->
+                 <div class="bg-secondary rounded-2xl border border-zinc-700 shadow-sm hover:shadow-2xl transition-shadow p-8 flex flex-col relative text-white">
+                    <h3 class="text-xl font-bold mb-2">Platform Dominator</h3>
+                    <p class="text-gray-400 text-sm mb-6">Durasi Layanan: 30 Hari Efektif Iklan Tayang</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-extrabold">Rp 1.500.000</span>
+                        <span class="text-sm text-gray-500">/jasa</span>
+                    </div>
+                    
+                    <div class="bg-zinc-800 rounded-lg p-4 mb-6 border border-zinc-700">
+                        <p class="text-xs text-gray-400 font-semibold mb-1 uppercase tracking-wider">Estimasi Ad Spend (Disiapkan Klien)</p>
+                        <p class="text-sm font-bold text-white">Rp 200k+ sampai budget jutaan / hari</p>
+                        <p class="text-xs text-gray-400 mt-2"><i class="fa-solid fa-chart-pie text-accent mr-1"></i> Mode Scale-Up Agresif</p>
+                        <p class="text-xs text-gray-400 mt-1"><i class="fa-solid fa-chart-pie text-accent mr-1"></i> Estimasi dapat 2500-4000 Unique Reader / 1 juta spent iklan</p>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 flex-1">
+                        <li class="flex items-start gap-3 text-sm text-gray-300"><i class="fa-solid fa-check text-accent mt-0.5"></i> Manajemen Skala Penuh</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-300"><i class="fa-solid fa-check text-accent mt-0.5"></i> 4 Desain Visual Image/Video high CTR</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-300"><i class="fa-solid fa-check text-accent mt-0.5"></i> Copywriting AIDA</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-300"><i class="fa-solid fa-check text-accent mt-0.5"></i> Unlimited A/B Testing Ads</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-300"><i class="fa-solid fa-check text-accent mt-0.5"></i> Evaluasi Harian & Optimasi</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-300"><i class="fa-solid fa-check text-accent mt-0.5"></i> Laporan Akhir + Insight</li>
+                        <li class="flex items-start gap-3 text-sm text-gray-300"><i class="fa-solid fa-check text-accent mt-0.5"></i> Bonus Landing Page seperti iklan Platform</li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center bg-white text-secondary hover:bg-gray-100 font-bold py-3 rounded-xl transition">Pilih Dominator</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow / 3 Simple Steps -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Cara Memulai Promosi</h2>
+                <p class="text-gray-600 text-lg">Hanya butuh 3 langkah mudah untuk membawa ceritamu ke hadapan ribuan pembaca baru.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center relative">
+                <!-- Connecting Line (Desktop only) -->
+                <div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gray-200 z-0"></div>
+
+                <div class="relative z-10">
+                    <div class="w-24 h-24 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl border-8 border-white mb-6">
+                        1
+                    </div>
+                    <h4 class="text-xl font-bold text-secondary mb-3">Konsultasi & Brief</h4>
+                    <p class="text-gray-600 px-4">Diskusikan sinopsis cerita, target audiens, dan tujuan promosimu bersama tim ahli kami.</p>
+                </div>
+                <div class="relative z-10 mt-8 md:mt-0">
+                    <div class="w-24 h-24 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl border-8 border-white mb-6">
+                        2
+                    </div>
+                    <h4 class="text-xl font-bold text-secondary mb-3">Setup & Approval</h4>
+                    <p class="text-gray-600 px-4">Kami meracik strategi, desain visual, dan copywriting AIDA. Anda tinjau, jika OK langsung tayang!</p>
+                </div>
+                <div class="relative z-10 mt-8 md:mt-0">
+                    <div class="w-24 h-24 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-xl border-8 border-white mb-6">
+                        3
+                    </div>
+                    <h4 class="text-xl font-bold text-secondary mb-3">Pantau & Nikmati Hasil</h4>
+                    <p class="text-gray-600 px-4">Iklan berjalan, visitor berdatangan. Anda cukup pantau peningkatan jumlah reads cerita Anda di platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- F.A.Q Section -->
+    <section id="faq" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-orange-500/10 border border-orange-500/20 text-primary text-sm font-semibold tracking-wide mb-4">
+                    Pusat Bantuan
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <p class="text-gray-600 text-lg">Masih ragu? Temukan jawaban untuk pertanyaan yang paling sering ditanyakan oleh penulis dan penerbit di bawah ini.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-primary transition-colors duration-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-secondary font-bold text-lg">
+                        <h3>Apakah harga paket sudah termasuk saldo iklan (Ad Spend)?</h3>
+                        <span class="shrink-0 rounded-full bg-orange-50 p-2 text-primary group-open:-rotate-180 transition duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p><strong>Belum.</strong> Untuk menjaga transparansi, kami memisahkan Biaya Jasa (Management Fee) dan Saldo Iklan (Ad Spend). Harga yang tertera adalah murni biaya jasa agensi kami. Untuk saldo iklan, Anda akan menyiapkannya secara terpisah dan budgetnya 100% masuk ke platform Meta.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2 -->
+                <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-primary transition-colors duration-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-secondary font-bold text-lg">
+                        <h3>Berapa rekomendasi budget saldo iklan untuk pemula?</h3>
+                        <span class="shrink-0 rounded-full bg-orange-50 p-2 text-primary group-open:-rotate-180 transition duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p>Kami merekomendasikan budget minimal Rp 50.000 hingga Rp 100.000 per hari untuk melakukan <i>testing</i> algoritma awal. Setelah menemukan konten iklan yang berkinerja paling baik (Winning Campaign), kita bisa melakukan <i>scale-up</i> (menaikkan budget) agar hasilnya lebih maksimal.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 3 -->
+                <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-primary transition-colors duration-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-secondary font-bold text-lg">
+                        <h3>Apakah ada jaminan 100% cerita saya pasti viral?</h3>
+                        <span class="shrink-0 rounded-full bg-orange-50 p-2 text-primary group-open:-rotate-180 transition duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p>Sebagai agensi yang profesional, kami tidak pernah memberikan janji palsu (Overpromise). Viralnya sebuah cerita dipengaruhi banyak faktor termasuk kualitas isi cerita (plot) itu sendiri. Yang <strong>kami garansi</strong> adalah: iklan Anda akan tayang dengan copywriting terbaik (AIDA), desain visual yang memikat, dan ditargetkan tepat pada pembaca yang relevan dengan genre Anda sehingga peluang viral meningkat drastis.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 4 -->
+                <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-primary transition-colors duration-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-secondary font-bold text-lg">
+                        <h3>Bagaimana jika akun iklan terkena pembatasan (Banned)?</h3>
+                        <span class="shrink-0 rounded-full bg-orange-50 p-2 text-primary group-open:-rotate-180 transition duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p>Anda tidak perlu pusing! Ini adalah salah satu fasilitas utama PRODIGI Ads. Tim teknis kamilah yang akan mengurus proses banding (appeal) ke Meta, serta merevisi materi konten secara gratis hingga iklan Anda bisa kembali tayang dengan aman.</p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 5 -->
+                <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-primary transition-colors duration-300 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-secondary font-bold text-lg">
+                        <h3>Apakah naskah dan nama pena saya dijamin rahasia?</h3>
+                        <span class="shrink-0 rounded-full bg-orange-50 p-2 text-primary group-open:-rotate-180 transition duration-300">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+                        <p>Tentu saja. Kami menjunjung tinggi etika profesi. Data karya, nama pena asli penulis, maupun strategi campaign Anda adalah 100% rahasia perusahaan dan tidak akan kami bagikan kepada pihak luar mana pun tanpa izin dari Anda.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section id="contact" class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Siap Meledakkan Jumlah Pembacamu?</h2>
+            <p class="text-orange-100 text-lg md:text-xl mb-10">
+                Jangan biarkan mahakaryamu tersimpan debu di sudut internet. Mari kita carikan panggung yang layak untuk ceritamu sekarang juga.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/6281234567890" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-xl flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> Chat Admin via WhatsApp
+                </a>
+                <a href="#pricing" class="bg-white hover:bg-gray-100 text-secondary px-8 py-4 rounded-full font-bold text-lg transition shadow-xl flex items-center justify-center">
+                    Cek Harga Dulu
+                </a>
+            </div>
+            <p class="text-orange-100 mt-6 text-sm"><i class="fa-solid fa-lock mr-1"></i> Data dan identitas penulis dijamin kerahasiaannya.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-gray-400 py-12 text-center text-sm border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <i class="fa-solid fa-bolt text-primary text-2xl"></i>
+                <span class="font-bold text-xl text-white tracking-tight">PRODIGI<span class="text-primary">Ads</span></span>
+            </div>
+            <p class="mb-4">Partner Pertumbuhan Cerita Fiksi Digital Indonesia.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-tiktok text-xl"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-meta text-xl"></i></a>
+            </div>
+            <p>&copy; 2026 PRODIGI Ads. Work with ❤️ by omger | Ai-Labs.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
